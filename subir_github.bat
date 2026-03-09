@@ -28,6 +28,9 @@ git add .
 echo [2/3] Guardando cambios localmente (commit)...
 git commit -m "%desc%"
 
+echo [A/3] Sincronizando repositorio local con GitHub...
+git pull origin main --rebase
+
 echo [3/3] Subiendo a GitHub...
 git push -u origin main
 
